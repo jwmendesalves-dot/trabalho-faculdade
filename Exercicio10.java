@@ -3,17 +3,11 @@ import java.util.Scanner;
 
 /**
  * Lista 04 - Arrays - Exercicio 10 (Integrador)
- * Caixa de loja. Ler a quantidade N de itens da compra. Se N for menor que
- * 1, imprimir mensagem de quantidade invalida e encerrar. Caso contrario,
- * ler o preco unitario e a quantidade de cada item em dois arrays de tamanho
- * N. Imprimir o subtotal de cada item, o total da compra, um desconto de 5%
- * quando o total passar de 200,00 e o valor final a pagar, todos com 2 casas.
  */
 public class Exercicio10 {
 
     public static void main(String[] args) {
         Locale.setDefault(new Locale("pt", "BR"));
-        // Scanner le com Locale.US para aceitar valores digitados com ponto (ex: 7.5)
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
         final double LIMITE_DESCONTO = 200.00;
@@ -23,11 +17,10 @@ public class Exercicio10 {
         System.out.print("Digite a quantidade de itens da compra: ");
         int n = sc.nextInt();
 
-        // Validacao da quantidade
         if (n < 1) {
             System.out.println("Quantidade invalida! A compra deve ter pelo menos 1 item.");
             sc.close();
-            return; // encerra o programa
+            return;
         }
 
         double[] precosUnitarios = new double[n];

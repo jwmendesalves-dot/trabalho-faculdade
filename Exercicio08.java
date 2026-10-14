@@ -3,15 +3,11 @@ import java.util.Scanner;
 
 /**
  * Lista 04 - Arrays - Exercicio 08
- * Ler as notas de 10 alunos de uma turma. Contar quantos foram aprovados
- * com nota maior ou igual a 6, quantos ficaram em recuperacao com nota
- * maior ou igual a 4 e quantos foram reprovados abaixo disso.
  */
 public class Exercicio08 {
 
     public static void main(String[] args) {
         Locale.setDefault(new Locale("pt", "BR"));
-        // Scanner le com Locale.US para aceitar valores digitados com ponto (ex: 7.5)
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
         final int QUANTIDADE_ALUNOS = 10;

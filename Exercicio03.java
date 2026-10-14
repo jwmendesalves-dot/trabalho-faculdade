@@ -3,14 +3,12 @@ import java.util.Scanner;
 
 /**
  * Lista 04 - Arrays - Exercicio 03
- * Ler as 4 notas de um aluno. Imprimir a media com duas casas e a situacao:
- * aprovado com media maior ou igual a 6 e reprovado abaixo disso.
  */
+
 public class Exercicio03 {
 
     public static void main(String[] args) {
         Locale.setDefault(new Locale("pt", "BR"));
-        // Scanner le com Locale.US para aceitar valores digitados com ponto (ex: 7.5)
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
         final int QUANTIDADE_NOTAS = 4;
@@ -21,7 +19,7 @@ public class Exercicio03 {
         for (int i = 0; i < notas.length; i++) {
             System.out.printf("Digite a %d%c nota: ", i + 1, 'a');
             notas[i] = sc.nextDouble();
-            soma += notas[i]; // acumulador
+            soma += notas[i];
         }
 
         double media = soma / notas.length;

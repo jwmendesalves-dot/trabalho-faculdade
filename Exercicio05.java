@@ -3,15 +3,11 @@ import java.util.Scanner;
 
 /**
  * Lista 04 - Arrays - Exercicio 05
- * Ler o preco de 5 produtos. Criar um segundo array com o preco de cada
- * produto com 10% de desconto. Imprimir, uma linha por produto, o preco
- * original e o preco com desconto.
  */
 public class Exercicio05 {
 
     public static void main(String[] args) {
         Locale.setDefault(new Locale("pt", "BR"));
-        // Scanner le com Locale.US para aceitar valores digitados com ponto (ex: 7.5)
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
         final int QUANTIDADE_PRODUTOS = 5;

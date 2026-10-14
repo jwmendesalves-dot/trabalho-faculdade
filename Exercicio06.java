@@ -3,16 +3,11 @@ import java.util.Scanner;
 
 /**
  * Lista 04 - Arrays - Exercicio 06
- * Ler o valor de um emprestimo e a taxa de juros simples mensal em
- * porcentagem. Preencher um array de 12 posicoes com o valor devido ao
- * final de cada mes, calculado por: valor + valor * taxa / 100 * mes.
- * Imprimir no formato "Mes 1: R$ 1020,00".
  */
 public class Exercicio06 {
 
     public static void main(String[] args) {
         Locale.setDefault(new Locale("pt", "BR"));
-        // Scanner le com Locale.US para aceitar valores digitados com ponto (ex: 7.5)
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
         final int QUANTIDADE_MESES = 12;

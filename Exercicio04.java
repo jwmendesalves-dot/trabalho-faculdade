@@ -3,14 +3,11 @@ import java.util.Scanner;
 
 /**
  * Lista 04 - Arrays - Exercicio 04
- * Ler o preco de 5 produtos. Imprimir todos os precos lidos e, ao final,
- * o total da compra com duas casas.
  */
 public class Exercicio04 {
 
     public static void main(String[] args) {
         Locale.setDefault(new Locale("pt", "BR"));
-        // Scanner le com Locale.US para aceitar valores digitados com ponto (ex: 7.5)
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
         final int QUANTIDADE_PRODUTOS = 5;
@@ -35,3 +32,4 @@ public class Exercicio04 {
         sc.close();
     }
 }
+s

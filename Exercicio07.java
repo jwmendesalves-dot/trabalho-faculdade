@@ -3,14 +3,11 @@ import java.util.Scanner;
 
 /**
  * Lista 04 - Arrays - Exercicio 07
- * Ler o salario de 6 funcionarios. Imprimir o maior salario, o menor
- * salario, a media com duas casas e quantos funcionarios ganham acima da media.
  */
 public class Exercicio07 {
 
     public static void main(String[] args) {
         Locale.setDefault(new Locale("pt", "BR"));
-        // Scanner le com Locale.US para aceitar valores digitados com ponto (ex: 7.5)
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
         final int QUANTIDADE_FUNCIONARIOS = 6;
@@ -26,7 +23,6 @@ public class Exercicio07 {
 
         double media = soma / salarios.length;
 
-        // Inicializa maior e menor com o primeiro elemento
         double maior = salarios[0];
         double menor = salarios[0];
 
